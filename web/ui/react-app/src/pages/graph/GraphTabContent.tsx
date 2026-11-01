@@ -9,7 +9,7 @@ interface GraphTabContentProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   data: any;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  startTimestamps: any;
+  startTimestamps?: any;
   exemplars: ExemplarData;
   displayMode: GraphDisplayMode;
   useLocalTime: boolean;

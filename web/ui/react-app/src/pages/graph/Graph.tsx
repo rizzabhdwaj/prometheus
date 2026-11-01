@@ -104,7 +104,11 @@ class Graph extends PureComponent<GraphProps, GraphState> {
     if (prevProps.showExemplars !== showExemplars && !showExemplars) {
       this.setState(
         {
-          chartData: { series: this.state.chartData.series, exemplars: [] },
+          chartData: {
+            series: this.state.chartData.series,
+            startTimestamps: this.state.chartData.startTimestamps,
+            exemplars: [],
+          },
           selectedExemplarLabels: { exemplar: {}, series: {} },
         },
         () => {
